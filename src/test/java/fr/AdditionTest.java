@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ReversePolishNotationTest {
+public class AdditionTest {
     @Test
     public void one_plus_zero_return_one() {
         String result = ReversePolishNotation.calculate("1 0 +");
