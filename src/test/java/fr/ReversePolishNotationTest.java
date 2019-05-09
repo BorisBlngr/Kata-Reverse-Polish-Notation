@@ -52,4 +52,10 @@ public class ReversePolishNotationTest {
         String result = ReversePolishNotation.calculate("-12 0 +");
         assertThat(result).isEqualTo("-12");
     }
+
+    @Test
+    public void one_plus_one_return_two() {
+        String result = ReversePolishNotation.calculate("1 1 +");
+        assertThat(result).isEqualTo("2");
+    }
 }
