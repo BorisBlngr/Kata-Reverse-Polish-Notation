@@ -1,7 +1,7 @@
 package fr;
 
 public class ReversePolishNotation {
-    public static String compile(String s) {
+    public static String calculate(String instructions) {
         return "1";
     }
 }
