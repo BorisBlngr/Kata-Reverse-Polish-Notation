@@ -10,4 +10,10 @@ public class ReversePolishNotationTest {
         String result = ReversePolishNotation.calculate("1 0 +");
         assertThat(result).isEqualTo("1");
     }
+
+    @Test
+    public void one_plus_zero_return_one() {
+        String result = ReversePolishNotation.calculate("0 1 +");
+        assertThat(result).isEqualTo("1");
+    }
 }
