@@ -18,7 +18,7 @@ public class ReversePolishNotationTest {
     }
 
     @Test
-    public void zero_plus_two_return_two() {
+    public void two_plus_zero_return_two() {
         String result = ReversePolishNotation.calculate("2 0 +");
         assertThat(result).isEqualTo("2");
     }
