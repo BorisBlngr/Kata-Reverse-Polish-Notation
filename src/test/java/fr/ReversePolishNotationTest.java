@@ -22,4 +22,11 @@ public class ReversePolishNotationTest {
         String result = ReversePolishNotation.calculate("3 0 +");
         assertThat(result).isEqualTo("3");
     }
+
+    @Test
+    public void twelve_plus_zero_return_twelve() {
+        String result = ReversePolishNotation.calculate("12 0 +");
+        assertThat(result).isEqualTo("12");
+    }
+
 }
