@@ -42,18 +42,6 @@ public class ReversePolishNotationTest {
     }
 
     @Test
-    public void zero_plus_minus_twelve_return_minus_twelve() {
-        String result = ReversePolishNotation.calculate("0 -12 +");
-        assertThat(result).isEqualTo("-12");
-    }
-
-    @Test
-    public void minus_twelve_plus_zero_return_minus_twelve() {
-        String result = ReversePolishNotation.calculate("-12 0 +");
-        assertThat(result).isEqualTo("-12");
-    }
-
-    @Test
     public void one_plus_one_return_two() {
         String result = ReversePolishNotation.calculate("1 1 +");
         assertThat(result).isEqualTo("2");
@@ -63,18 +51,6 @@ public class ReversePolishNotationTest {
     public void one_hundred_and_ten_plus_20_return_130() {
         String result = ReversePolishNotation.calculate("110 20 +");
         assertThat(result).isEqualTo("130");
-    }
-
-    @Test
-    public void one_hundred_and_ten_plus_minus_20_return_90() {
-        String result = ReversePolishNotation.calculate("110 -20 +");
-        assertThat(result).isEqualTo("90");
-    }
-
-    @Test
-    public void minus_10_plus_minus_20_return_minus_30() {
-        String result = ReversePolishNotation.calculate("-10 -20 +");
-        assertThat(result).isEqualTo("-30");
     }
 
     @Test
