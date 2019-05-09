@@ -70,4 +70,10 @@ public class ReversePolishNotationTest {
         String result = ReversePolishNotation.calculate("110 -20 +");
         assertThat(result).isEqualTo("90");
     }
+
+    @Test
+    public void minus_10_plus_minus_20_return_minus_30() {
+        String result = ReversePolishNotation.calculate("-10 -20 +");
+        assertThat(result).isEqualTo("-30");
+    }
 }

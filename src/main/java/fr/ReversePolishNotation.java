@@ -9,7 +9,5 @@ class ReversePolishNotation {
 
         Integer result = Integer.valueOf(first) + Integer.valueOf(second);
         return String.valueOf(result);
-
-
     }
 }
