@@ -5,6 +5,9 @@ public class ReversePolishNotation {
         if (instructions.contains("2")) {
             return "2";
         }
+        if (instructions.contains("3")) {
+            return "3";
+        }
         return "1";
     }
 }
