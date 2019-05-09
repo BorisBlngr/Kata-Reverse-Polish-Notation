@@ -10,8 +10,16 @@ class ReversePolishNotation {
         String first = s[0];
         String second = s[1];
 
-        Integer result = Integer.valueOf(first) + Integer.valueOf(second);
-        return String.valueOf(result);
+        Integer result = add(first, second);
+        return print(result);
+    }
+
+    private static String print(Integer result) {
+        return result.toString();
+    }
+
+    private static int add(String first, String second) {
+        return Integer.valueOf(first) + Integer.valueOf(second);
     }
 
     private static String[] parseInstructions(String instructions) {
