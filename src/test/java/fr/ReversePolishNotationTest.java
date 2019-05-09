@@ -46,4 +46,10 @@ public class ReversePolishNotationTest {
         String result = ReversePolishNotation.calculate("0 -12 +");
         assertThat(result).isEqualTo("-12");
     }
+
+    @Test
+    public void minus_twelve_plus_zero_return_minus_twelve() {
+        String result = ReversePolishNotation.calculate("-12 0 +");
+        assertThat(result).isEqualTo("-12");
+    }
 }
