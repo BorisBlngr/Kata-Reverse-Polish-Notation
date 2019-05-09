@@ -6,11 +6,9 @@ class ReversePolishNotation {
 
     static String calculate(String instructions) {
 
-        String[] s = parseInstructions(instructions);
-        String first = s[0];
-        String second = s[1];
+        Instruction instruction = parseInstructions(instructions);
 
-        Integer result = add(first, second);
+        Integer result = instruction.compute();
         return print(result);
     }
 
@@ -18,11 +16,12 @@ class ReversePolishNotation {
         return result.toString();
     }
 
-    private static int add(String first, String second) {
-        return Integer.valueOf(first) + Integer.valueOf(second);
+    private static Instruction parseInstructions(String instructions) {
+
+        String[] s = instructions.split(regex);
+
+        return new Instruction(Integer.valueOf(s[0]), Integer.valueOf(s[1]), s[2]);
     }
 
-    private static String[] parseInstructions(String instructions) {
-        return instructions.split(regex);
-    }
+
 }
