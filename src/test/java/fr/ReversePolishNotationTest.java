@@ -64,4 +64,10 @@ public class ReversePolishNotationTest {
         String result = ReversePolishNotation.calculate("110 20 +");
         assertThat(result).isEqualTo("130");
     }
+
+    @Test
+    public void one_hundred_and_ten_plus_minus_20_return_90() {
+        String result = ReversePolishNotation.calculate("110 -20 +");
+        assertThat(result).isEqualTo("90");
+    }
 }
