@@ -29,4 +29,9 @@ public class ReversePolishNotationTest {
         assertThat(result).isEqualTo("12");
     }
 
+    @Test
+    public void zero_plus_one_return_one() {
+        String result = ReversePolishNotation.calculate("0 1 +");
+        assertThat(result).isEqualTo("1");
+    }
 }
