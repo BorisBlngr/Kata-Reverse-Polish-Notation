@@ -5,7 +5,6 @@ class ReversePolishNotation {
     private static final String regex = " ";
 
     static String calculate(String instructions) {
-
         Instruction instruction = parseInstructions(instructions);
 
         Integer result = instruction.compute();
