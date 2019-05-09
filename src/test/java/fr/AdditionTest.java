@@ -58,5 +58,4 @@ public class AdditionTest {
         String result = ReversePolishNotation.calculate("20 110 +");
         assertThat(result).isEqualTo("130");
     }
-
 }
